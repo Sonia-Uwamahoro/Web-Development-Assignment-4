@@ -78,6 +78,10 @@ i {
     border: none;
     border-radius: 2em;
 } 
+
+.search-bar i{
+    color: #444;
+}
 .search-bar{ 
     position:relative; 
     padding:10px; 
@@ -88,23 +92,24 @@ i {
     margin:0; 
     padding-left: 30px; 
 }
-.search-image1 { 
+
+#search-image1 { 
     position:absolute; 
-    bottom:15px; 
+    bottom:13px; 
     left:180px; 
     width:18px; 
     height:18px; 
 } 
-.search-image2 { 
+#search-image2 { 
     position:absolute; 
     bottom:16px; 
     left:150px; 
     width:16.5px; 
     height:16.5px; 
 } 
-.search-image3 { 
+#search-image3 { 
     position:absolute; 
-    bottom:15px; 
+    bottom:13px; 
     left:15px; 
     width:18px; 
     height:18px; 
