@@ -5,6 +5,11 @@ body{
     box-sizing: border-box;
     background-color: #ffffff;
     width: 100%;
+    font-family: 'Rubik', sans-serif !important;
+}
+
+i {
+    position: relative;
 }
 
 /* Navigation and front page*/
@@ -13,8 +18,8 @@ body{
 .navbar{
     display: grid;
     grid-template-columns: repeat(4,1fr);
-    margin: 0 10% 0 10%;
-    color: #ffe5d6;
+    margin: 0 10% 2% 10%;
+    color: #ffe5d6;  
 }
 
 
@@ -58,9 +63,10 @@ body{
 .nav-icons i{
     padding: 1em 1em 0 1em !important;
     font-size: 1.3em;
-
 }
-
+.nav-icons i:hover{
+    color: #ffac7d;
+}
 .navigation hr{
     width: 73.5%;
     margin-right: 13em;
@@ -71,10 +77,6 @@ body{
     background-color: #ffe5d693;
     border: none;
     border-radius: 2em;
-    /* 
-    padding: .5em 1em .5em .3em;
-    */
-
 } 
 .search-bar{ 
     position:relative; 
@@ -90,15 +92,15 @@ body{
     position:absolute; 
     bottom:15px; 
     left:180px; 
-    width:20px; 
-    height:20px; 
+    width:18px; 
+    height:18px; 
 } 
 .search-image2 { 
     position:absolute; 
-    bottom:15px; 
+    bottom:16px; 
     left:150px; 
-    width:20px; 
-    height:20px; 
+    width:16.5px; 
+    height:16.5px; 
 } 
 .search-image3 { 
     position:absolute; 
@@ -116,7 +118,6 @@ body{
 #front-page{
     background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url('../images/image1.jpg');
     width: 100%;
-    font-family: 'Rubik', sans-serif;
     background-size:cover;
     padding-top: 50px;
     padding-bottom: 50px;
@@ -135,7 +136,6 @@ body{
 .front-page h1{
     font-size: 2.5em;
     font-weight: lighter;
-    font-family: 'Rubik', sans-serif;
     color: #ffe5d6;
 
 }
@@ -143,18 +143,16 @@ body{
 .front-page p{
     padding: .4em 0 .4em 0;
     font-size: .85em;
-    font-family: 'Rubik', sans-serif;
     color: #ffe5d6;
 }
 
 
 .front-page button{
     margin: 2em 0 2em 0;
-    padding: .7em 3.5em .7em 3.5em;
+    padding: .7em 2em 1.2em 2em;
     font-size: .95em;
     background-color: #ffac7d;
     color: #002d3d;
-    font-family: 'Rubik', sans-serif;
     border: none;
     border-radius: 1em;
 }
@@ -165,8 +163,9 @@ body{
 }
 
 .front-page i{
-  font-size: 1em;
+  font-size: 1.4em;
   padding-left: .4em;
+  top: .2em;
 }
   
  
@@ -177,14 +176,13 @@ body{
 
 .explore-title{
     color: #002d3d;
-    font-family: 'Rubik', sans-serif;
 }
 
 .hr-lines:before{
     content:" ";
     display: block;
     height: 2px;
-    width: 130px;
+    width: 110px;
     position: absolute;
     top: 50%;
     left: 45%;
@@ -214,21 +212,14 @@ body{
   }
   
 .explore img{
-    width: 100%;
+    width: 95%;
 }
 
 .explore h2{
     color: #002d3d;
     text-transform: uppercase;
     font-size: .9em;
-    font-family: 'Rubik', sans-serif;
-    margin-left: 1em;
-    border-bottom: 2px solid #ffad7d5d;
-    
-}
-
-.explore img{
-    padding: 1em !important;
+    border-bottom: 2px solid #ffad7d5d; 
 }
 
 .modern h2{
@@ -249,11 +240,10 @@ body{
 }
 .explore-button button{
     margin: 2em 0 2em 0;
-    padding: .7em 3.5em .7em 3.5em;
+    padding: .7em 3.5em 1.2em 3.5em;
     font-size: .95em;
     background-color: #ffac7d;
     color: #002d3d;
-    font-family: 'Rubik', sans-serif;
     border: none;
     border-radius: 1em;
     margin-bottom: 3em;
@@ -263,8 +253,9 @@ body{
 }
 
 .explore-button button i{
-  font-size: 1em;
-  padding-left: .4em;
+    font-size: 1.4em;
+    padding-left: .4em;
+    top: .2em;
 
 }
 
@@ -277,12 +268,10 @@ body{
     background-color: #002d3d;
     padding-top: 1em;
     color: #ffe5d6;
-    font-family: 'Rubik', sans-serif;
 }
 
 .p-design-title{
     color: #ffac7d;
-    font-family: 'Rubik', sans-serif;
     font-size: 1.1em;
 }
 
@@ -329,6 +318,10 @@ body{
     padding-left: 1em;
 }
 
+.p-design h3:hover{
+    color: #ffac7d;
+}
+
 .p-design p{
     text-align: left;
     padding-left: 1em;
@@ -350,7 +343,6 @@ body{
 
 .inspiration{
     background-color: #ffe5d6;
-    font-family: 'Rubik', sans-serif;
 }
 
 
@@ -375,7 +367,6 @@ body{
 
 .find-inspiration h1{
     color: #002d3d;
-    font-family: 'Rubik', sans-serif;
     font-size: 1.5em;
 
 }
@@ -420,9 +411,19 @@ body{
     text-decoration: underline;
 }
 
+.find-inspiration a:hover{
+    color: #b17c5d;
+}
+
 
 .insipiration-image{
     margin: 11%;
+}
+
+.find-inspiration i{
+    font-size: 1.4em;
+    padding-left: .4em;
+    top: .2em;
 }
 
 /* End Need insipiration */
@@ -434,7 +435,6 @@ body{
 
 #newsletter{
     text-align: center;
-    font-family: 'Rubik', sans-serif;
     padding: 5em 0 5em 0;
 }
 
@@ -482,7 +482,6 @@ body{
     background-color: #002d3d;
     padding-top: 5em;
     padding-bottom: 5em;
-    font-family: 'Rubik', sans-serif;
 }
 .footer{
     display: grid;
@@ -547,5 +546,5 @@ body{
 .links a:hover{
     color: #ffac7d;
 }
-/* footer */
+/* End footer */
 
